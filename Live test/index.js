@@ -16,6 +16,17 @@ function reverseString(str) {
     return str.split('').reverse().join('');
 }
 console.log(reverseString("hello"));
+// more basic approach
+function reverseString1(str) {
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed;
+}
+console.log(reverseString1("hexagon"));
+
+
 
 
 // 3) Write a function removeDuplicates(arr) that takes an array and returns a new array with only unique values ​​(duplicates removed). Ex: removeDuplicates([5, 5, 5, 6, 7]); // Output: [5, 6, 7]
@@ -36,7 +47,7 @@ function removeDuplicates1(arr) {
     }
     return uniqueArray;
 }
-console.log(removeDuplicates1([5, 5, 5, 6, 7,7,8,8,3]));
+console.log(removeDuplicates1([5, 5, 5, 6, 7, 7, 8, 8, 3]));
 
 
 
