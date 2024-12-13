@@ -60,3 +60,5 @@ function countVowels(str) {
     return str.split('').filter(char => vowels.includes(char)).length;
 }
 console.log(countVowels("Your Name"));
+
+// https://github.com/nahmxp/Ostad-Assignment-for-Module-10/blob/main/Live%20test/index.js
